@@ -1,0 +1,118 @@
+.headerCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.bgWhite {
+  background-color: white;
+  border-bottom-color: var(--grey);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1320px;
+  height: 80px;
+  padding-inline: 20px;
+}
+.leftHeader,
+.rightHeader,
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.leftHeader input {
+  padding-left: 11px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  background: var(--light-purple);
+  width: 274px;
+  height: 34px;
+  outline: none;
+}
+.navLinks a {
+  color: #111;
+  font-size: 14px;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+}
+.rightHeader a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--purple);
+  transition: all 0.3s ease-in-out;
+}
+.rightHeader a:hover::before {
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 906px) {
+  .mobile {
+    display: block;
+    color: black;
+    font-size: 21px;
+    cursor: pointer;
+    position: relative;
+    z-index: 7;
+  }
+  .navLinks {
+    z-index: 6;
+    position: fixed;
+    right: -600px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 150px;
+    padding-left: 30px;
+    gap: 30px;
+    border-left: 1px solid var(--grey);
+    transition: all 0.5s ease-in-out;
+  }
+  .navLinks a {
+    font-size: 18px;
+  }
+  .openHeader {
+    right: 0;
+  }
+}
+@media screen and (max-width: 710px) {
+  .leftHeader input {
+    display: none;
+  }
+}
+@media screen and (max-width: 434px) {
+  .navLinks {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .leftHeader img {
+    max-width: 120px;
+  }
+  .rightHeader button {
+    padding: 6px 10px;
+  }
+}

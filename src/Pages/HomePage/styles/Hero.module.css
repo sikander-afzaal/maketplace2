@@ -1,0 +1,70 @@
+.heroCont {
+  padding-top: 80px;
+  background-image: url("../../../Assets/hero-bg.jpg");
+  background-size: cover;
+  background-position: right;
+  min-height: max(100vh, 800px);
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1320px;
+  gap: 3rem;
+  padding-inline: 20px;
+}
+.leftHero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0.5;
+}
+.leftHero h4 {
+  text-transform: uppercase;
+  color: var(--purple);
+  font-size: 16px;
+}
+.leftHero h1 {
+  color: #111;
+  font-size: 50px;
+  line-height: 1.1;
+}
+.leftHero p {
+  color: var(--grey);
+  font-size: 18px;
+  line-height: 1.7em;
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.rightHero {
+  flex: 0.5;
+}
+.rightHero img {
+  max-width: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1072px) {
+  .leftHero h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .rightHero {
+    display: none;
+    flex: none;
+  }
+  .leftHero {
+    flex: none;
+    width: 100%;
+  }
+  .leftHero h1 {
+    font-size: 40px;
+  }
+}

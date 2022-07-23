@@ -1,0 +1,29 @@
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1320px;
+  margin-top: 7rem;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  padding-inline: 20px;
+}
+.category h1 {
+  font-size: 40px;
+  color: #111;
+  text-align: center;
+}
+.catRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 650px) {
+  .catRow {
+    justify-content: center;
+  }
+}

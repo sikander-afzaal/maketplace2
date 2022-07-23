@@ -1,0 +1,32 @@
+.catCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 190px;
+  height: 109px;
+  background-color: var(--light-purple);
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.catCard svg {
+  font-size: 40px;
+  transition: 0.3s;
+  color: var(--purple);
+}
+.catCard h3 {
+  color: #606060;
+  font-weight: 700;
+  font-size: 14px;
+}
+.catCard:hover {
+  color: #fff;
+  background: #403f83;
+  box-shadow: 5px 5px 30px 0 #403f83;
+}
+.catCard:hover svg,
+.catCard:hover h3 {
+  color: #fff;
+}

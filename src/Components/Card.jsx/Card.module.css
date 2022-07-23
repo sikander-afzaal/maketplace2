@@ -1,0 +1,73 @@
+.card {
+  height: auto;
+  min-height: 410px;
+  width: 305px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  border-radius: 10px;
+}
+.profileRow {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.profileRow img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--purple);
+}
+.timerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 151px;
+  gap: 5px;
+  border: 2px solid var(--purple);
+  background-color: white;
+  border-radius: 100vh;
+}
+.timeBox h2 {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.cardBg {
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+.card h5 span {
+  color: var(--grey);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.row p:first-child {
+  color: var(--purple);
+  font-weight: 700;
+}
+.likes {
+  color: var(--grey);
+  font-size: 14px;
+}
+.likes svg {
+  cursor: pointer;
+}

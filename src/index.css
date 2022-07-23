@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1;
+}
+:root {
+  --purple: #8364e2;
+  --grey: #727272;
+  --light-purple: rgba(131, 100, 226, 0.1);
+}
+.cta-btn {
+  text-align: center;
+  color: #fff;
+  background: var(--purple);
+  border-radius: 6px;
+  outline: 0;
+  font-weight: 800;
+  padding: 8px 20px;
+  font-size: 14px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  box-shadow: 2px 2px 20px 0 rgb(131 100 226 / 50%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
