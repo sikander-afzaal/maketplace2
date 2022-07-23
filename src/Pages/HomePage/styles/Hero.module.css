@@ -43,6 +43,9 @@
   align-items: center;
   gap: 15px;
 }
+.btnDiv button {
+  padding: 12px 30px;
+}
 .rightHero {
   flex: 0.5;
 }
@@ -59,6 +62,10 @@
   .rightHero {
     display: none;
     flex: none;
+  }
+  .heroCont {
+    min-height: auto;
+    padding: 130px 0px;
   }
   .leftHero {
     flex: none;
