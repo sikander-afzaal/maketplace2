@@ -26,6 +26,10 @@ function Header() {
 
   return (
     <div className={`${styles.headerCont} ${scrollBg && styles.bgWhite}`}>
+      <div
+        className={`${styles.overlay} ${openHeader && styles.openOverlay}`}
+        onClick={() => setOpenHeader(false)}
+      ></div>
       <div className={styles.header}>
         <div className={styles.leftHeader}>
           <Link to={"/"}>

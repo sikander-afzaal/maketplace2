@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Card.module.css";
+import { Link } from "react-router-dom";
 function Card({ profileImg, cardBg, time, name, likes }) {
   const [liked, setLiked] = useState(false);
   const [timerDays, setTimerDays] = useState("00");
@@ -49,8 +50,8 @@ function Card({ profileImg, cardBg, time, name, likes }) {
     };
   });
   return (
-    <div className={styles.card}>
-      <div className={styles.profileRow}>
+    <Link to={"/NftDetail/2"} className={styles.card}>
+      {/* <div className={styles.profileRow}>
         <img src={profileImg} alt="" />
         <div className={styles.timerDiv}>
           <div className={styles.timeBox}>
@@ -66,23 +67,24 @@ function Card({ profileImg, cardBg, time, name, likes }) {
             <h2>{timerSeconds}s</h2>
           </div>
         </div>
-      </div>
+      </div> */}
       <img className={styles.cardBg} src={cardBg} alt="" />
-      <h4>{name}</h4>
-      <h5>
-        <span>0.08 ETH </span> 1/20
-      </h5>
-      <div className={styles.row}>
-        <p>Place a bid</p>
-        <p className={styles.likes}>
-          <FontAwesomeIcon
-            onClick={() => setLiked((prev) => !prev)}
-            icon={liked ? solidHeart : faHeart}
-          />{" "}
-          {likes}
-        </p>
+      <div className={styles.absRow}>
+        <h6>Open</h6>
+        <FontAwesomeIcon
+          className={`${liked && styles.redColor}`}
+          onClick={() => setLiked((prev) => !prev)}
+          icon={liked ? solidHeart : faHeart}
+        />
       </div>
-    </div>
+      <div className={styles.cardDesc}>
+        <h4>{name}</h4>
+        <h5>
+          <span>0.08 ETH </span> 1/20
+        </h5>
+        <p>Place a bid</p>
+      </div>
+    </Link>
   );
 }
 

@@ -1712,6 +1712,13 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.1.1"
 
+"@fortawesome/free-brands-svg-icons@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.1.1.tgz#3580961d4f42bd51dc171842402f23a18a5480b1"
+  integrity sha512-mFbI/czjBZ+paUtw5NPr2IXjun5KAC8eFqh1hnxowjA4mMZxWz4GCIksq6j9ZSa6Uxj9JhjjDVEd77p2LN2Blg==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.1.1"
+
 "@fortawesome/free-regular-svg-icons@^6.1.1":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.1.1.tgz#3f2f58262a839edf0643cbacee7a8a8230061c98"
@@ -2300,6 +2307,18 @@
   integrity sha512-29g2SZ29HtsqA58pLCtopI1P/cPy5/UAzlcAXO6T/CNJimG6yA8kx4NaseMyJULiC+TEs02Y9/yeHzClqoA0hw==
   dependencies:
     antlr4ts "^0.5.0-alpha.4"
+
+"@splidejs/react-splide@^0.7.8":
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/@splidejs/react-splide/-/react-splide-0.7.8.tgz#f74484a6906da427c1c73397cd4d56b7a40d489c"
+  integrity sha512-zXBIsa8v3h9iv8KKxEdbN+RveJKQU/VE7Iev9GoXiFxnCzN/luyySsF1FZz/lYw9B+eWiLXehOBcWLzLo+05ng==
+  dependencies:
+    "@splidejs/splide" "^4.0.7"
+
+"@splidejs/splide@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-4.0.7.tgz#f442b7c5fc99df472c6f989787e1fb331cf177c6"
+  integrity sha512-aJAOGJN2lwjwou3mxQofc3uhe+RXpw9in0WfysFX7AMT/mj7wSqoetfm41s7J8jU6FJ3ZWaLYgSJIpBAQ5wyqw==
 
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
